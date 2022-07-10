@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Employee Polls Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the starter code for the final assessment project for Udacity's React & Redux course.
 
-## Available Scripts
+The _DATA.js file represents a fake database and methods that let you access the data. The only thing you need to edit in the _DATA.js file is the value of avatarURL. Each user should have an avatar, so you’ll need to add the path to each user’s avatar.
 
+Using the provided starter code, you'll build a React/Redux front end for the application. We recommend using the Create React App to bootstrap the project.
+
+
+## Data
+ I have used the data given to build the store, reducer and actions of the app:
+
+ Mostly: I fetched the data: Users and questions
 In the project directory, you can run:
 
-### `npm start`
+### For Users
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For users: I gave the avator for every user
+The user must use his login credentials to access the board, ask a question or give an answer.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The answers are counted as well as questions. 
+The user who responded many questions is on the top of leaderboard feature
 
-### `npm test`
+### NavBAr
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The navbar of the app is composed of Leaderboard, Home, new poll and log out
 
-### `npm run build`
+There is a "would rather sentence" before the user chooses between the options one or two.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The percentage of the questions asked or answers given is shown under each user 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Questions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The questions  have ID, author, timestamp, optionOne and OptionTwo. 
+ID: The questions' uniqueness 
+Author: User or someone who asked the question
+Timestamp: This is when the user asked the question
+OptionOne or Two: these are the votes options for the users
 
-### `npm run eject`
+### Voting Options
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I have used the voting options via the four methods from database:
+._getUsers()
+._getQuestions()
+._saveQuestion(question)
+._saveQuestionAnswers(object)
+### Interaction
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+When the user asks a question and want to go to Home Page:
+He will see the percentage of the questions answered, the avatar, and the percentage of the answers as well. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Sort by date
+The questions are classified following the when they are asked, the recent ones are on the top of the page 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
