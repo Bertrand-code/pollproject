@@ -6,6 +6,11 @@ The _DATA.js file represents a fake database and methods that let you access the
 
 Using the provided starter code, you'll build a React/Redux front end for the application. We recommend using the Create React App to bootstrap the project.
 
+### clone, Download 
+Clone or download the project
+Run npm install in the project root directory to install dependencies
+Run npm start to launch the project. Note: I found npm start.
+
 
 ## Data
  I have used the data given to build the store, reducer and actions of the app:
