@@ -1,0 +1,113 @@
+header {
+  background-color: #61dafb;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  justify-content: space-between;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header ul li {
+  font-size: larger;
+}
+header ul li a {
+  text-decoration: none;
+}
+header ul li a:hover {
+  text-decoration: underline;
+}
+header ul li a.active {
+  font-weight: 600;
+}
+
+.inputElement {
+  border: 2px solid #979797;
+  display: block;
+  /* height: rem; */
+  padding-block: 10px;
+  margin-block-start: 10px;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border: 2px solid #b6b6b6;
+}
+.newPollForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border: 2px solid #b6b6b6;
+}
+.btn {
+  width: 100%;
+  height: 4rem;
+  background-color: #2d96d3;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-block: 2rem;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #0c527a;
+  color: #fff;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:disabled {
+  background-color: #b6b6b6;
+  color: #fff;
+}
+.options {
+  font-size: large;
+}
+.optionsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.optionsForm input {
+  width: 2rem;
+}
+.optionsForm label {
+  font-size: 1.5rem;
+}
+
+#questionList {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+  max-width: 900px;
+}
+#questionList > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #b6b6b6;
+}
+#questionList div > span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.question {
+  font-size: 1rem;
+  padding-inline: 20px;
+  text-decoration: none;
+}

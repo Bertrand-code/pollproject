@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logincomponent should render and match screenshot 1`] = `
+<div>
+  <div
+    style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh;"
+  >
+    <form
+      class="loginForm"
+      data-testid="loginForm"
+    >
+      <label>
+        Username:
+        <select
+          name="username"
+        >
+          <option
+            value="sarahedo"
+          >
+            sarahedo
+          </option>
+          <option
+            value="tylermcginnis"
+          >
+            tylermcginnis
+          </option>
+          <option
+            value="mtsamis"
+          >
+            mtsamis
+          </option>
+          <option
+            value="zoshikanlu"
+          >
+            zoshikanlu
+          </option>
+        </select>
+        <br />
+      </label>
+      <br />
+      <label>
+        Password:
+        <input
+          class="inputElement"
+          type="password"
+          value="password123"
+        />
+      </label>
+      <br />
+      <button
+        class="btn"
+      >
+         Login 
+      </button>
+    </form>
+  </div>
+</div>
+`;
