@@ -8,7 +8,9 @@ Using the provided starter code, you'll build a React/Redux front end for the ap
 
 ### clone, Download 
 1.Clone or download the project
-2.Run npm install in the project root directory to install dependencies
+
+2.Run: npm install in the project root directory to install dependencies
+
 3.Run npm start to launch the project. Note: I found npm start.
 
 
